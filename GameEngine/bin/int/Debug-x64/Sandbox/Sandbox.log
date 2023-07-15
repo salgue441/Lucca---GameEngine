@@ -1,4 +1,4 @@
-﻿  main.cpp
-C:\Users\carlo\Documents\developer\GameEngine\GameEngine\Sandbox\src\main.cpp(10,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
-C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(1127,5): error MSB6006: "link.exe" exited with code 1104.
-LINK : fatal error LNK1104: cannot open file 'C:\Users\carlo\Documents\developer\GameEngine\GameEngine\bin\Debug-x64\GameEngine\GameEngine.lib'
+﻿  sandbox.cpp
+  sandbox_app.cpp
+  Generating Code...
+  Sandbox.vcxproj -> C:\Users\carlo\Documents\developer\GameEngine\GameEngine\bin\Debug-x64\Sandbox\Sandbox.exe
