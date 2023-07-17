@@ -24,6 +24,9 @@
     <ClInclude Include="src\game_engine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\game_engine\core\entry_point\entry_point.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\game_engine\core\application\application.cpp">

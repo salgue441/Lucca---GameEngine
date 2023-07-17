@@ -10,6 +10,8 @@
  */
 
 // C++ Standard Library
+#include <memory>
+ 
 // Project files
 #include "game_engine.h"
 
@@ -28,11 +30,14 @@ public:
 	}
 };
 
-// Main function
-int main()
+// Client defined functions
+/**
+ * @brief
+ * Create the application object.
+ * @return std::unique_ptr<GameEngine::Application> Pointer to the application
+ * object.
+ */
+std::unique_ptr<GameEngine::Application> GameEngine::create_application()
 {
-	SandboxApp *app = new SandboxApp();
-	app->run_application();
-
-	delete app;
+	return std::make_unique<SandboxApp>();
 }

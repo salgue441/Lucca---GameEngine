@@ -13,6 +13,8 @@
 #pragma once
 
 // C++ Standard Library
+#include <stdio.h>
 
 // Project files
 #include "game_engine/core/application/application.h"
+#include "game_engine/core/entry_point/entry_point.h"
