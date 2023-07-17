@@ -1,0 +1,2 @@
+﻿sandbox_app.obj : error LNK2005: main already defined in sandbox.obj
+C:\Users\carlo\Documents\developer\GameEngine\GameEngine\bin\Debug-x64\Sandbox\Sandbox.exe : fatal error LNK1169: one or more multiply defined symbols found

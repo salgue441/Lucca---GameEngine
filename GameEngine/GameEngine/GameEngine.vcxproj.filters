@@ -15,18 +15,21 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\game_engine\application.h">
+    <ClInclude Include="src\game_engine\core\application\application.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\game_engine\core\core.h">
+    <ClInclude Include="src\game_engine\core\preprocessors\core\core.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\game_engine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\game_engine\core\entry_point\entry_point.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\game_engine\application.cpp">
+    <ClCompile Include="src\game_engine\core\application\application.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

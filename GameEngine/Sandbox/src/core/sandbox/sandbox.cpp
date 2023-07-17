@@ -9,7 +9,10 @@
  *
 */
 
-// Project files
+// C++ Standard Library
+#include <memory>
+
+// Project files	
 #include "sandbox.h"
 
 // Constructor

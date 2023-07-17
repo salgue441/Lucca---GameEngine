@@ -14,15 +14,13 @@
 // Project files
 #include "core/sandbox/sandbox.h"
 
-// Entry point
+// Client defined functions
 /**
  * @brief
- * Entry point for the Game Engine.
- * 
- * @return int 
+ * Creates a new GameEngine :: Application object.
+ * @return A unique pointer to a GameEngine :: Application object.
  */
-int main(int argc, char** argv)
+std::unique_ptr<GameEngine::Application> GameEngine::create_application()
 {
-	std::unique_ptr<Sandbox> sandbox = std::make_unique<Sandbox>();
-	sandbox->run();
+	return std::make_unique<Sandbox>();
 }
