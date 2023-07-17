@@ -1,26 +1,38 @@
 /**
- * @file main.cpp
- * @brief Entry point for the Game Engine.
+ * @file sandbox_app.cpp
+ * @brief Main file for the sandbox application. This is the entry point of the
+ * sandbox application. 
  * @author Carlos Salguero
  * @version 1.0
- * @date 2023-07-14
+ * @date 2023-07-17
  * 
  * @copyright Copyright (c) - MIT License
- * 
  */
-// C++ Standard LibraryJ
-#include <memory>
 
+// C++ Standard Library
 // Project files
-#include "core/sandbox/sandbox.h"
+#include "game_engine.h"
 
-// Client defined functions
-/**
- * @brief
- * Creates a new GameEngine :: Application object.
- * @return A unique pointer to a GameEngine :: Application object.
- */
-std::unique_ptr<GameEngine::Application> GameEngine::create_application()
+// Sandbox application class
+class SandboxApp : public GameEngine::Application
 {
-	return std::make_unique<Sandbox>();
+public:
+	// Constructor
+	SandboxApp()
+	{
+	}
+
+	// Destructor
+	~SandboxApp()
+	{
+	}
+};
+
+// Main function
+int main()
+{
+	SandboxApp *app = new SandboxApp();
+	app->run_application();
+
+	delete app;
 }

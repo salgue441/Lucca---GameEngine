@@ -1,21 +1,20 @@
 /**
- * @file Application.h
- * @brief Main Application class for the Game Engine.
+ * @file application.h
+ * @brief Application class for the engine API. This class is
+ * the entry point of the engine.
  * @author Carlos Salguero
  * @version 1.0
- * @date 2023-07-14
+ * @date 2023-07-17
  * 
  * @copyright Copyright (c) - MIT License
  * 
  */
 
-#pragma once
-
-// C++ Standard Library
-#include <memory>
+#ifndef APPLICATION_H
+#define APPLICATION_H
 
 // Project files
-#include "../preprocessors/core/core.h"
+#include "../preprocessor/preprocessor.h"
 
 namespace GameEngine
 {
@@ -29,10 +28,8 @@ namespace GameEngine
 		virtual ~Application();
 
 		// Methods
-		void run();
+		void run_application();
 	};
 
-	// Cliend defined functions
-	std::unique_ptr<Application> create_application();
-
+#endif //! APPLICATION_H
 } // namespace GameEngine
