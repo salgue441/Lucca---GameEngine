@@ -27,9 +27,15 @@
     <ClInclude Include="src\game_engine\core\entry_point\entry_point.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\game_engine\utils\log\log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\game_engine\core\application\application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game_engine\utils\log\log.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

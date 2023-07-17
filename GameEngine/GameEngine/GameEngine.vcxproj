@@ -59,6 +59,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalIncludeDirectories>$(SolutionDir)GameEngine\lib\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -75,6 +76,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalIncludeDirectories>$(SolutionDir)GameEngine\lib\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -84,12 +86,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\game_engine\utils\log\log.h" />
     <ClInclude Include="src\game_engine.h" />
     <ClInclude Include="src\game_engine\core\application\application.h" />
     <ClInclude Include="src\game_engine\core\entry_point\entry_point.h" />
     <ClInclude Include="src\game_engine\core\preprocessor\preprocessor.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\game_engine\utils\log\log.cpp" />
     <ClCompile Include="src\game_engine\core\application\application.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

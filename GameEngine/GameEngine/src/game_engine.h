@@ -14,7 +14,11 @@
 
 // C++ Standard Library
 #include <stdio.h>
+#include <memory>
 
 // Project files
 #include "game_engine/core/application/application.h"
+#include "game_engine/utils/log/log.h"
+
+// Entry point
 #include "game_engine/core/entry_point/entry_point.h"

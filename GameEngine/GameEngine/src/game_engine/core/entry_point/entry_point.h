@@ -28,7 +28,10 @@
  */
 int main(int argc, char** argv)
 {
-	printf("Welcome to GameEngine!\n");
+	GameEngine::Log::init();
+	GE_CORE_WARN("Initialized Log!");
+	GE_INFO("Initialized Log!");
+
 	auto app = GameEngine::create_application();
 	app->run_application();
 
