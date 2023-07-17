@@ -4,6 +4,9 @@ bin/
 bin-int/
 obj/
 
+# ipch files
+*.ipch
+
 # Files
 *.user
 *.suo
