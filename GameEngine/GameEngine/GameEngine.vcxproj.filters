@@ -1,42 +1,49 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="game_engine">
+      <UniqueIdentifier>{942F236F-00E5-9B64-89D9-953BF58D9268}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    <Filter Include="game_engine\core">
+      <UniqueIdentifier>{8CBC3E5C-78B5-5DAE-A1E7-42338D3F3DBA}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="game_engine\core\application">
+      <UniqueIdentifier>{6FD28548-5B8D-75F4-0445-EE3EF0DEBF84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game_engine\core\entry_point">
+      <UniqueIdentifier>{9621BC78-82DC-AB24-2B94-246F172EF6B4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game_engine\core\preprocessor">
+      <UniqueIdentifier>{224F65D5-8E67-4CFF-5714-DC98C3EBE098}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game_engine\utils">
+      <UniqueIdentifier>{14A05EE5-80B6-5C7B-C92D-E89C35832D03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game_engine\utils\log">
+      <UniqueIdentifier>{052A34B5-7196-EFAF-3A8A-870DA6B51118}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\game_engine\core\preprocessor\preprocessor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <ClInclude Include="src\game_engine.h" />
     <ClInclude Include="src\game_engine\core\application\application.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\game_engine.h">
-      <Filter>Header Files</Filter>
+      <Filter>game_engine\core\application</Filter>
     </ClInclude>
     <ClInclude Include="src\game_engine\core\entry_point\entry_point.h">
-      <Filter>Header Files</Filter>
+      <Filter>game_engine\core\entry_point</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game_engine\core\preprocessor\preprocessor.h">
+      <Filter>game_engine\core\preprocessor</Filter>
     </ClInclude>
     <ClInclude Include="src\game_engine\utils\log\log.h">
-      <Filter>Header Files</Filter>
+      <Filter>game_engine\utils\log</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\game_engine\core\application\application.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>game_engine\core\application</Filter>
     </ClCompile>
     <ClCompile Include="src\game_engine\utils\log\log.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>game_engine\utils\log</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

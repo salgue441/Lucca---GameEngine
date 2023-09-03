@@ -1,9 +1,18 @@
-# GameEngine
+# Lucca - Game Engine
 
 ## Description
 
-This is a game engine created with modern C++. It is platform specific and only works on Windows.
+Lucca is a 2D and 3D game engine currently in development.
 
-## License
+## Build
 
-See the [LICENSE](LICENSE) file for license rights and limitations (MIT).
+### Dependencies
+
+- [Premake5](https://premake.github.io/download.html#v5)
+- [spdlog](https://github.com/gabime/spdlog)
+
+### Running
+
+```bash
+./run
+```
