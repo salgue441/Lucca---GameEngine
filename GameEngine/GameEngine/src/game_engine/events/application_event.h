@@ -61,7 +61,7 @@ namespace GameEngine
 			return ss.str();
 		}
 
-		// Event Categories
+		// Event Macros
 		EVENT_CLASS_TYPE(WindowResize);
 		EVENT_CLASS_CATEGORY(EventCategoryApplication);
 
@@ -82,7 +82,7 @@ namespace GameEngine
 		// Constructor
 		WindowCloseEvent() {}
 
-		// Event Categories
+		// Event Macros
 		EVENT_CLASS_TYPE(WindowClose);
 		EVENT_CLASS_CATEGORY(EventCategoryApplication);
 	};
@@ -99,7 +99,7 @@ namespace GameEngine
 		// Constructor
 		AppTickEvent() {}
 
-		// Event Categories
+		// Event Macros
 		EVENT_CLASS_TYPE(AppTick);
 		EVENT_CLASS_CATEGORY(EventCategoryApplication);
 	};
@@ -116,7 +116,7 @@ namespace GameEngine
 		// Constructor
 		AppUpdateEvent() {}
 
-		// Event Categories
+		// Event Macros
 		EVENT_CLASS_TYPE(AppUpdate);
 		EVENT_CLASS_CATEGORY(EventCategoryApplication);
 	};
@@ -133,7 +133,7 @@ namespace GameEngine
 		// Constructor
 		AppRenderEvent() {}
 
-		// Event Categories
+		// Event Macros
 		EVENT_CLASS_TYPE(AppRender);
 		EVENT_CLASS_CATEGORY(EventCategoryApplication);
 	};
