@@ -49,7 +49,7 @@ namespace GameEngine
 
 		// Methods
 		/**
-		 * @brief 
+		 * @brief  
 		 * Returns a string representation of the event.
 		 * @return std::string with the event information.
 		 */

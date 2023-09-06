@@ -124,5 +124,30 @@ namespace GameEngine
 	 * @brief Dispatches the event.
 	 */
 	class EventDispatcher
-	{};
+	{
+		// Using
+		template <typename T>
+		using EventFn = std::function<bool(T&)>;
+
+	public:
+		// Constructor
+		EventDispatcher(Event& event)
+			: m_event(event) {}
+
+		// Methods
+		template <typename T>
+		bool dispatch(EventFn<T> func)
+		{
+			if (m_event.get_event_type() == T::static_type())
+			{
+				m_event.m_handled = func(*(T*)&m_event);
+				return true;
+			}
+
+			return false;
+		}
+
+	private:
+		Event& m_event;
+	};
 }
