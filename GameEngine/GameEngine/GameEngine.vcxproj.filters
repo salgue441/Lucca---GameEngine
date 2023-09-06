@@ -22,9 +22,6 @@
     <Filter Include="game_engine\utils\log">
       <UniqueIdentifier>{052A34B5-7196-EFAF-3A8A-870DA6B51118}</UniqueIdentifier>
     </Filter>
-    <Filter Include="game_engine\events">
-      <UniqueIdentifier>{8c06d5b7-737f-413a-863c-9a35f3987e2a}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\game_engine.h" />
@@ -40,6 +37,8 @@
     <ClInclude Include="src\game_engine\utils\log\log.h">
       <Filter>game_engine\utils\log</Filter>
     </ClInclude>
+    <ClInclude Include="src\game_engine\events\event.h" />
+    <ClInclude Include="src\game_engine\events\application_event.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\game_engine\core\application\application.cpp">

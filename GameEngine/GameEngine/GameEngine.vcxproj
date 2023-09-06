@@ -147,6 +147,8 @@
     <ClInclude Include="src\game_engine\core\application\application.h" />
     <ClInclude Include="src\game_engine\core\entry_point\entry_point.h" />
     <ClInclude Include="src\game_engine\core\preprocessor\preprocessor.h" />
+    <ClInclude Include="src\game_engine\events\application_event.h" />
+    <ClInclude Include="src\game_engine\events\event.h" />
     <ClInclude Include="src\game_engine\utils\log\log.h" />
   </ItemGroup>
   <ItemGroup>
