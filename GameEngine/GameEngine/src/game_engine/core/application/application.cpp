@@ -9,7 +9,6 @@
  * @copyright Copyright (c) - MIT License
  *
  */
-
 // Project files
 #include "application.h"
 

@@ -21,3 +21,6 @@
 #else
 	#error Game Engine only supports Windows!
 #endif
+
+// Bitwise operators
+#define BIT(x) (1 << x)
